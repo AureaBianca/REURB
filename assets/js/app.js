@@ -1,8 +1,12 @@
-console.log("JavaScript conectado com sucesso!");
+// ===== MODO ESCURO =====
+const btnTheme = document.getElementById("toggleTheme");
 
-const btn = document.getElementById("btnMensagem");
-const msg = document.getElementById("mensagem");
+btnTheme.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
 
-btn.addEventListener("click", () => {
-  msg.textContent = "Funcionou! JS está interagindo com o HTML ✅";
+  if (document.body.classList.contains("dark")) {
+    btnTheme.textContent = "☀️ Modo claro";
+  } else {
+    btnTheme.textContent = "🌙 Modo escuro";
+  }
 });

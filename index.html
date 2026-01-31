@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Site Aprova Digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -11,31 +14,59 @@
 <body>
 
   <header>
-  <h1>Áurea Bianca</h1>
-  <p>Engenharia Civil | Tecnologia | Programação</p>
+   <nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#projetos">Projetos</a>
+  <a href="#contato">Contato</a>
+</nav>
+ 
+  <h1>Áurea B S Lima</h1>
+  <p>Engenharia | Tecnologia | Programação</p>
+  <button id="toggleTheme" class="btn-theme" type="button">🌙 Modo escuro</button>
+
 </header>
 
 <main>
-  <section>
+  <section id="Sobre">
     <h2>Sobre mim</h2>
     <p>
-      Sou formada em Engenharia Civil e estou desenvolvendo projetos em
+      Sou formada em Engenharia e estou desenvolvendo projetos em
       tecnologia com foco em programação e soluções digitais.
     </p>
   </section>
 
-  <section>
-    <h2>Projetos</h2>
-    <ul>
-      <li>Site Aprova Digital (este projeto)</li>
-      <li>Próximo projeto em desenvolvimento</li>
-    </ul>
-  </section>
+  <section id="projetos">
+  <h2>Projetos</h2>
+
+  <div class="projetos">
+    <div class="card">
+      <h3>Site Aprova Digital</h3>
+      <p>
+        Site para REURB (ideia no TCC com tema reurb) desenvolvido com HTML, CSS e JavaScript,
+        utilizando VS Code e publicado com GitHub Pages.
+      </p>
+      <a href="https://github.com/AureaBianca/REURB/" target="_blank">Ver projeto</a>
+
+    </div>
+  </div>
+</section>
 </main>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <p>Email: eng.aureabianca@gmail.com</p>
+</section>
 
 <footer>
   <p>© 2026 – Áurea Bianca</p>
+  <div class="footer-links">
+    <a href="https://github.com/AureaBianca/" target="_blank">GitHub</a>
+    <a href="www.linkedin.com/in/aureabiancasilveira
+
+" target="_blank">LinkedIn</a>
+  </div>
 </footer>
+
 
   <!-- JavaScript -->
   <script src="assets/js/app.js"></script>
