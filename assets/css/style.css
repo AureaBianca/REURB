@@ -205,3 +205,6 @@ body.dark .card {
 body.dark .card a {
   background: #3b82f6;
 }
+.card-click {
+  transform: scale(0.98);
+}
